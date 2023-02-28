@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightgrey;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .myform {
+            border: 5px solid aliceblue;
+            border-radius: 10px;
+            height: 500px;
+            width: 400px;
+            background-color: aliceblue;
+            padding: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        }
+        .content {
+            margin: 20px 20px 20px 45px;
+        }
+
+        .btn1,
+        .btn2 {
+            text-decoration: none;
+            height: 35px;
+            width: 60px;
+            margin-left: 40px;
+            background-color: brown;
+            color: aliceblue;
+            border: 0px solid brown;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div>
+            <h1>General Form</h1>
+            <div class="myform">
+                <form action="" id="myform">
+                    <div class="content">
+                        <label>Name: <input type="text"></label>
+                    </div>
+                    <div class="content">
+                        <label>Address: <textarea name="" id="" cols="" rows=""></textarea></label>
+                    </div>
+                    <div class="content">
+                        <label>Date of Birth: <input type="date"></label>
+                    </div>
+                    <div class="content">
+                        <label for="gender">Gender:
+                            <label for="gender"><input type="radio" name="gender">Male</label>
+                            <label for="gender"><input type="radio" name="gender">Female</label>
+                        </label>
+                    </div>
+                    <div class="content">
+                        <label for="">
+                            Hobbies:
+                            <ol>
+                                <li><label for=""><input type="checkbox">Football</label></li>
+                                <li><label for=""><input type="checkbox">Reading</label></li>
+                                <li><label for=""><input type="checkbox">Watching Movie</label></li>
+                                <li><label for=""><input type="checkbox">Other</label></li>
+                            </ol>
+                        </label>
+                    </div>
+                    <div class="content">
+                        <label for="">Year of Graduation:
+                            <select name="" id="">
+                                <option value="">2020</option>
+                                <option value="">2021</option>
+                                <option value="">2022</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                                <option value="">2027</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="content"> <label for="">E-mail: <input type="email"></label></div>
+                    <div class="content"><label>Password: <input type="password"></label></div>
+                    <button type="submit" id="submitForm" class="btn1"><a href="thank.html" target="_blank">Submit</a></button>
+                    <button type="reset" class="btn2">Clear</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <script>
+        $("#submitForm").click(function () {
+            alert("The Form has been Submitted.");
+        });
+    </script> -->
+</body>
+
+</html>
